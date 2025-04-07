@@ -2,3 +2,17 @@ header{
     text-align: center;
     font-size: xx-large
 }
+.Burger{
+    height: 13vh;
+    margin-right: 50%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container img {
+    max-width: 100%;
+  }
+  
