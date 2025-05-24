@@ -1,23 +1,36 @@
-html{
+.html{
   scroll-behavior: smooth;
-    
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
-body{
+.body{
   margin:0;
   overflow-x: hidden;
 }
-
-header{
-    text-align: center;
-    font-size: xx-large
+.header-container{
+  box-shadow: 0 2px 5px rgb(11, 11, 27);
+  padding: 15px 0;
+  z-index: 1000; 
+  top: 0; 
+  left: 0;
 }
-.header-container 
+
+ 
+.header{
+    text-align: center;
+    font-size: xx-large;
+    display: flex;
+}
+
+.logo{
+  height: 100px;
+}
 
 #Cookingburg {
   width: 100%; 
   height: 100%; 
   z-index: -10;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .video-container {
@@ -32,6 +45,14 @@ header{
 }
 #menu-toggle:checked + .menu-icon + .menu {
   right: 0;
+}
+
+p {
+ position:absolute;
+ top: 5px;
+ right:550px;
+ font-size: 30px;
+ 
 }
 
 
@@ -65,3 +86,129 @@ header{
   
 }
 
+.menu {
+  right: -250px;
+  transition: right 0.3s ease;
+}
+
+.menu.open {
+  right: 0;
+}
+
+.bestalla-link {
+  position: fixed;
+  top: 15px;
+  right: 70px;
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  padding: 8px 16px;
+  border-radius: 999px; 
+  text-decoration: none;
+  z-index: 3;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.image-text-block {
+  padding: 2rem;
+  background: linear-gradient(to right, #ffe29f, #ffa99f); 
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+  overflow: hidden;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.content-box img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  flex: 1 1 300px;
+}
+ .content-box:nth-child(2) {
+  flex-direction: row-reverse;
+  } 
+
+.text-side {
+  flex: 2 1 300px;
+  padding: 1rem 2rem;
+}
+
+.text-side h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+} 
+
+.text-side p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #333;
+  }
+  .text-side {
+    padding: 1rem;
+  }
+}
+
+.kontakt-form {
+  padding: 2rem;
+  background-color: #fff5e6;
+  max-width: 600px;
+  margin: 3rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.kontakt-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.kontakt-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.kontakt-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.kontakt-form input,
+.kontakt-form textarea {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.kontakt-form button {
+  padding: 0.75rem;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.kontakt-form button:hover {
+  background-color: #cc5200;
+}
