@@ -1,170 +1,209 @@
-.html{
-  scroll-behavior: smooth;
-  font-family: sans-serif;
-  overflow-x: hidden;
-}
-.body{
-  margin:0;
-  overflow-x: hidden;
-}
-.header-container{
-  box-shadow: 0 2px 5px rgb(11, 11, 27);
-  padding: 15px 0;
-  z-index: 1000; 
-  top: 0; 
-  left: 0;
-}
+html{
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+body{
+    margin:0;
+    overflow-x: hidden;
+  }
+  .hero-container{
+    box-shadow: 0 2px 5px rgb(11, 11, 27);
+    padding: 15px 0;
+    z-index: 1000; 
+    top: 0; 
+    left: 0;
+  }
+  
+  .logo{
+    height: 100px;
+    position: absolute;
+    left: 30px;
 
- 
-.header{
-    text-align: center;
-    font-size: xx-large;
+    top: 10px;
+
+  }
+
+  #Cookingburg {
+    width: 100%; 
+    height: 100%; 
+    z-index: -10;
+    object-fit: fill;
+  }
+
+  .video-container {
     display: flex;
-}
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
 
-.logo{
-  height: 100px;
-}
-
-#Cookingburg {
-  width: 100%; 
-  height: 100%; 
-  z-index: -10;
-  object-fit: fill;
-}
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-#menu-toggle {
-  display: none;
-}
-#menu-toggle:checked + .menu-icon + .menu {
-  right: 0;
-}
-
-p {
- position:absolute;
- top: 5px;
- right:550px;
- font-size: 30px;
- 
-}
+  #menu-toggle {
+    display: none;
+  }
+  #menu-toggle:checked + .menu-icon + .menu {
+    right: 0;
+  }
 
 
-.menu-icon {
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 3;
-}
-.menu {
-  position: fixed;
-  top: 0;
-  right: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: #333;
-  color: white;
-  padding-top: 60px;
-  flex-direction: column;
-  transition: right 0.3s ease;
-  z-index: 2;
-  
-}
-.menu a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-  
-}
+  .menu-icon {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 60px;
+    flex-direction: column;
+    transition: right 0.3s ease;
+    z-index: 2;
+    
+  }
+  .menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    
+  }
 
-.menu {
-  right: -250px;
-  transition: right 0.3s ease;
-}
+  .menu {
+    right: -250px;
+    transition: right 0.3s ease;
+  }
 
-.menu.open {
-  right: 0;
-}
+  .menu.open {
+    right: 0;
+  }
 
-.bestalla-link {
-  position: fixed;
-  top: 15px;
-  right: 70px;
-  font-size: 16px;
-  color: white;
-  background-color: red;
-  padding: 8px 16px;
-  border-radius: 999px; 
-  text-decoration: none;
-  z-index: 3;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
+  .bestalla-link {
+    position: fixed;
+    top: 15px;
+    right: 70px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    padding: 8px 16px;
+    border-radius: 999px; 
+    text-decoration: none;
+    z-index: 3;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
 
-.image-text-block {
-  padding: 2rem;
-  background: linear-gradient(to right, #ffe29f, #ffa99f); 
-}
+  .image-text-block {
+    padding: 2rem;
+    background: linear-gradient(to right, #ffe29f, #ffa99f); 
+  }
 
-.content-box {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin: 2rem 0;
-  overflow: hidden;
-  padding: 1rem;
-  flex-wrap: wrap;
-}
+  .content-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+    overflow: hidden;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
 
-.content-box img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 12px;
-  flex: 1 1 300px;
-}
- .content-box:nth-child(2) {
-  flex-direction: row-reverse;
+  .content-box img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    flex: 1 1 300px;
+  }
+  .content-box:nth-child(2) {
+    flex-direction: row-reverse;
+    } 
+
+  .text-side {
+    flex: 2 1 300px;
+    padding: 1rem 2rem;
+  }
+
+  .text-side h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
   } 
 
-.text-side {
-  flex: 2 1 300px;
-  padding: 1rem 2rem;
-}
+  .text-side p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
 
-.text-side h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-} 
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #333;
+    }
+    .text-side {
+      padding: 1rem;
+    }
+  }
 
-.text-side p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
+  .kontakt-form {
+    padding: 2rem;
+    background-color: #fff5e6;
+    max-width: 600px;
+    margin: 3rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 
-@media (max-width: 768px) {
-  .menu {
+  .kontakt-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .kontakt-form form {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: #333;
   }
-  .text-side {
-    padding: 1rem;
-  }
-}
 
-.menu-section {
+  .kontakt-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .kontakt-form input,
+  .kontakt-form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .kontakt-form button {
+    padding: 0.75rem;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .kontakt-form button:hover {
+    background-color: #cc5200;
+  }
+
+  .menu-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -210,14 +249,8 @@ p {
       color: inherit;
       display: block;
     }
-header h1 {
-  margin: 0;
-  font-size: 3em;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  animation: glow 2s ease-in-out infinite alternate;
-    }
-header {
+
+  header {
   position: relative;
   z-index: 2;
   background: rgba(51, 51, 51, 0.9);
@@ -226,7 +259,13 @@ header {
   text-align: center;
   padding: 30px 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: glow 2s ease-in-out infinite alternate;
     }
+
 @keyframes glow {
   from {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.3);
@@ -246,54 +285,34 @@ header {
     background-position: 0% 50%;
       }
     }
-    
-
-
-.kontakt-form {
-  padding: 2rem;
-  background-color: #fff5e6;
-  max-width: 600px;
-  margin: 3rem auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.kontakt-form h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.kontakt-form form {
+  
+.submenu-section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.kontakt-form label {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.kontakt-form input,
-.kontakt-form textarea {
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+.menu-item3 {
+  flex: 0 1 200px;
+  text-align: center;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.menu-item3:hover {
+  transform: scale(1.05);
+}
+
+.menu-item3 img {
   width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 0.5rem;
 }
-
-.kontakt-form button {
-  padding: 0.75rem;
-  background-color: #ff6600;
-  color: white;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.kontakt-form button:hover {
-  background-color: #cc5200;
-}
+    
