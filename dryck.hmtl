@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Burgare - Big Burga</title>
+  <link rel="stylesheet" href="projekt.css">
+  <script defer src="projekt.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Drycker</h1>
+    <a href="meny.html" class="back-link">← Tillbaka till Menyn</a>
+  </header>
+  
+
+
+  <section class="submenu-section">
+    <div class="menu-item3">
+      <span class="price-tag" data-name="Coca Cola" data-price="18"> 18kr</span>
+      <img src="cola.png" alt="Cola">
+      <h2>Cola</h2>
+      <p>Coca Cola</p>
+    </div>
+    <div class="menu-item3">
+       <span class="price-tag">18kr</span>
+      <img src="Fanta.png" alt="Fanta Orange">
+      <h2>Fanta Zero</h2>
+      <p>Fanta Zero Orange</p>
+    </div>
+    <div class="menu-item3">
+      <img src="exotic.png" alt="Fant Exotic">
+      <span class="price-tag">18kr</span>
+      <h2>Fanta Exotic</h2>
+      <p>Fanta Exotic</p>
+    </div>
+    <div class="menu-item3">
+       <span class="price-tag">18 kr</span>
+      <img src="sprite.png" alt="Sprite">
+      <h2>Sprite Zero</h2>
+      <p>Sprite Zero</p>
+    </div>
+  </section>
+
+</body>
+</html>
